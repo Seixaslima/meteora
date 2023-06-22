@@ -1,0 +1,50 @@
+.cabecalho {
+  width: 100%;
+  background-color: var(--preto);
+  color: var(--cinza);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 23px;
+  box-sizing: border-box;
+}
+
+.links {
+  display: flex;
+  gap: 40px;
+}
+
+.links li {
+  display: flex;
+  align-items: center;
+}
+
+.links li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo a {
+  cursor: default;
+}
+.pesquisa {
+  display: flex;
+  gap: 16px;
+  margin: 15px 0;
+}
+
+.campoPesquisa {
+  width: 170px;
+  font-size: 15px;
+  color: var(--cinza);
+  padding: 7px 0 7px 15px;
+}
+
+.botaoPesquisa {
+  background-color: var(--preto);
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid #fff;
+  padding: 9px 12px;
+}
