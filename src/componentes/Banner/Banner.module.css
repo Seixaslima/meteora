@@ -1,0 +1,40 @@
+.banner {
+  margin-top: -5px;
+  position: relative;
+  width: 100%;
+}
+
+.imagem img {
+  width: 100%;
+}
+
+.voltar {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+}
+.avancar {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+}
+.posicao {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .posicao {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .linha {
+    border: 2px solid rgba(255, 255, 255, 50%);
+    width: 30px;
+  }
+}

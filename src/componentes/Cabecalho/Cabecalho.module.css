@@ -9,11 +9,14 @@
 
 .menu {
   display: flex;
+  width: 100%;
+  box-sizing: border-box;
   padding-left: 23px;
 }
 
 .pesquisa {
   display: flex;
+  box-sizing: border-box;
   gap: 16px;
   padding: 15px 23px;
 }
@@ -117,6 +120,7 @@
 
     .menuSanduiche {
       display: block;
+      z-index: 100;
     }
   }
 }
