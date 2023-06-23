@@ -1,10 +1,10 @@
-import { Link } from 'react-router-dom';
 import styles from './MenuSanduiche.module.css';
 
 import abrirMenu from './abrir-menu.png';
 import fecharMenu from './fechar-menu.png';
 
 import React, { useState } from 'react';
+import ListaMenu from 'componentes/ListaMenu/ListaMenu';
 
 export default function MenuSanduiche() {
   const [aberto, setAberto] = useState(false);
@@ -26,18 +26,7 @@ export default function MenuSanduiche() {
       />
       <div className="links">
         <ul className={styles.links}>
-          <li>
-            <Link to="">Home</Link>
-          </li>
-          <li>
-            <Link to="">Nossas lojas</Link>
-          </li>
-          <li>
-            <Link to="">Novidades</Link>
-          </li>
-          <li>
-            <Link to="">Promoções</Link>
-          </li>
+          <ListaMenu />
         </ul>
       </div>
     </div>

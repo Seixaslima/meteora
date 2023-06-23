@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom';
 import styles from './Cabecalho.module.css';
 import logo from './Logo desktop.png';
 
 import React from 'react';
 import MenuSanduiche from 'componentes/MenuSanduiche/MenuSanduiche';
+import ListaMenu from 'componentes/ListaMenu/ListaMenu';
 
 export default function Cabecalho() {
   return (
@@ -11,18 +11,7 @@ export default function Cabecalho() {
       <div className={styles.menu}>
         <img className={styles.logo} src={logo} alt="Logo da loja" />
         <ul className={styles.links}>
-          <li>
-            <Link to="">Home</Link>
-          </li>
-          <li>
-            <Link to="">Nossas lojas</Link>
-          </li>
-          <li>
-            <Link to="">Novidades</Link>
-          </li>
-          <li>
-            <Link to="">Promoções</Link>
-          </li>
+          <ListaMenu />
         </ul>
       </div>
       <div className={styles.pesquisa}>
