@@ -1,16 +1,21 @@
 .cabecalho {
   width: 100%;
-  background-color: var(--preto);
-  color: var(--cinza);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 23px;
   box-sizing: border-box;
+  background-color: black;
 }
 
 .menu {
   display: flex;
+  padding-left: 23px;
+}
+
+.pesquisa {
+  display: flex;
+  gap: 16px;
+  padding: 15px 23px;
 }
 
 .links {
@@ -30,16 +35,10 @@
   color: #fff;
 }
 
-.pesquisa {
-  display: flex;
-  gap: 16px;
-  margin: 15px 0;
-}
-
 .campoPesquisa {
   width: 170px;
   font-size: 15px;
-  color: var(--cinza);
+  color: #212529;
   padding: 7px 0 7px 15px;
 }
 
@@ -56,9 +55,9 @@
 }
 
 @media (max-width: 768px) {
-  .cabecalho {
+  /* .cabecalho {
     height: 58px;
-  }
+  } */
   .logo {
     height: 24px;
   }
@@ -82,6 +81,26 @@
   }
 
   @media (max-width: 375px) {
+    .cabecalho {
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #fff;
+    }
+
+    .menu,
+    .pesquisa {
+      width: 100%;
+    }
+
+    .menu {
+      padding: 20px;
+      background-color: var(--preto);
+    }
+    .pesquisa {
+      background-color: #fff;
+      justify-content: center;
+    }
+
     .links {
       display: none;
     }
@@ -90,8 +109,10 @@
       height: 18px;
     }
 
-    .pesquisa {
-      display: none;
+    .botaoPesquisa {
+      background-color: #fff;
+      color: var(--preto);
+      border: 1px solid var(--preto);
     }
 
     .menuSanduiche {

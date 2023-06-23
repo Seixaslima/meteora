@@ -7,7 +7,7 @@ import fecharMenu from './fechar-menu.png';
 import React, { useState } from 'react';
 
 export default function MenuSanduiche() {
-  const [aberto, setAberto] = useState(true);
+  const [aberto, setAberto] = useState(false);
   function mudarMenu() {
     setAberto(!aberto);
   }
