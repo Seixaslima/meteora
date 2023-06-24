@@ -1,27 +1,16 @@
 import styles from './Banner.module.css';
 import { BiSolidRightArrow, BiSolidLeftArrow } from 'react-icons/bi';
 
-import React, { useState } from 'react';
+import React from 'react';
 
-export default function Banner() {
-  function tipoDispositivo() {
-    const largura = window.innerWidth;
-    let resultado = 'Desktop';
-    largura < 376
-      ? (resultado = 'Mobile')
-      : largura < 769
-      ? (resultado = 'Tablet')
-      : (resultado = 'Desktop');
-
-    return resultado;
-  }
-  const [dispositivo, setDispositivo] = useState(tipoDispositivo());
-  window.addEventListener('resize', () => setDispositivo(tipoDispositivo()));
-
+export default function Banner({ dispositivo }) {
   return (
     <div className={styles.banner}>
       <div className={styles.imagem}>
-        <img src={`./assets/imgBanner/${dispositivo}/carousel_1.png`} alt="" />
+        <img
+          src={`/assets/${dispositivo}/Banner/carousel_1.png`}
+          alt="Imagem do banner"
+        />
       </div>
 
       <div className={styles.voltar}>
@@ -35,7 +24,6 @@ export default function Banner() {
         <div className={styles.linha} />
         <div className={styles.linha} />
       </div>
-      <p>{dispositivo}</p>
     </div>
   );
 }

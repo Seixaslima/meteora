@@ -1,0 +1,12 @@
+.imagem {
+  margin-bottom: -2px;
+  background-color: #daff01;
+}
+
+.titulo {
+  color: #fff;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 16px;
+  background-color: black;
+}

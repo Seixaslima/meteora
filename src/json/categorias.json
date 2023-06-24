@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "titulo": "Camisetas",
+    "img": "camiseta",
+    "alt": "Imagem de uma camisa"
+    
+  },
+  {
+    "id": 2,
+    "titulo": "Bolsas",
+    "img": "Bolsas",
+    "alt": "Imagem de uma bolça"
+  },
+  {
+    "id": 3,
+    "titulo": "Calçados",
+    "img": "calçados",
+    "alt": "Imagem de um par de tênis"
+  },
+  {
+    "id": 4,
+    "titulo": "Calças",
+    "img": "calças",
+    "alt": "Imagem de uma pilha de calças dobradas"
+  },
+  {
+    "id": 5,
+    "titulo": "Casacos",
+    "img": "casacos",
+    "alt": "imagem de um casaco de trico"
+  },
+  {
+    "id": 6,
+    "titulo": "Óculos",
+    "img": "óculos",
+    "alt": "imagem de um oculos de sol"
+  }
+]
