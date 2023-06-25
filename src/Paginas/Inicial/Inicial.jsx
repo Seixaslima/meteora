@@ -1,5 +1,6 @@
 import Banner from 'componentes/Banner/Banner';
 import Categorias from 'componentes/Categorias/Categorias';
+import Facilidades from 'componentes/Facilidades/Facilidades';
 // import styles from './Inicial.module.css';
 
 import React, { useState } from 'react';
@@ -18,11 +19,12 @@ export default function Inicial() {
   }
   const [dispositivo, setDispositivo] = useState(tipoDispositivo());
   window.addEventListener('resize', () => setDispositivo(tipoDispositivo()));
-  
+
   return (
     <>
       <Banner dispositivo={dispositivo} />
       <Categorias dispositivo={dispositivo} />
+      <Facilidades />
     </>
   );
 }

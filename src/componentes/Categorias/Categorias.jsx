@@ -1,4 +1,4 @@
-import Card from 'componentes/Card/Card';
+import Card from 'componentes/Categorias/Card/Card';
 import styles from './Categorias.module.css';
 import categorias from 'json/categorias.json';
 

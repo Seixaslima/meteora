@@ -5,11 +5,12 @@ import Cabecalho from 'componentes/Cabecalho/Cabecalho';
 
 export default function PaginaPadrao({ children }) {
   return (
-    <main>
+    <>
       <Cabecalho />
-
-      <Outlet />
-      {children}
-    </main>
+      <main>
+        <Outlet />
+        {children}
+      </main>
+    </>
   );
 }
