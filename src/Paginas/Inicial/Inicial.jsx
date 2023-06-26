@@ -1,6 +1,7 @@
 import Banner from 'componentes/Banner/Banner';
 import Categorias from 'componentes/Categorias/Categorias';
 import Facilidades from 'componentes/Facilidades/Facilidades';
+import SecaoProdutos from 'componentes/SecaoProdutos/SecaoProdutos';
 // import styles from './Inicial.module.css';
 
 import React, { useState } from 'react';
@@ -24,6 +25,7 @@ export default function Inicial() {
     <>
       <Banner dispositivo={dispositivo} />
       <Categorias dispositivo={dispositivo} />
+      <SecaoProdutos dispositivo={dispositivo} />
       <Facilidades />
     </>
   );

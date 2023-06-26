@@ -1,0 +1,67 @@
+.card {
+  width: 350px;
+}
+
+.imagem img {
+  width: 100%;
+}
+
+.info {
+  border: 1px solid #00000021;
+  border-top: none;
+  margin-top: -4px;
+  padding: 16px;
+  color: #212529;
+}
+
+.nome {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 13px;
+}
+
+.descricao {
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.valor {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 10px;
+}
+
+.botao {
+  width: 70px;
+  height: 19px;
+  padding: 9px 16px;
+  background: #9353ff;
+}
+
+.botao a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.457px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 330px;
+  }
+
+  @media screen and (max-width: 375px) {
+    .card {
+      width: 323px;
+    }
+
+    .info {
+      padding: 13px 16px;
+    }
+  }
+}
