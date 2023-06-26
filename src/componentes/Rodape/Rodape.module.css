@@ -1,0 +1,18 @@
+.rodape {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 17px 23px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: black;
+}
+
+.texto {
+  color: #fff;
+  color: #fff;
+  font-size: 13px;
+  line-height: 20px;
+}
