@@ -1,5 +1,5 @@
 .secaoProdutos {
-  max-width: 80%;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -22,7 +22,7 @@
 
 @media screen and (max-width: 768px) {
   .secaoProdutos {
-    max-width: 95%;
+    max-width: 690px;
   }
 
   .titulo {
@@ -32,7 +32,7 @@
 
   @media screen and (max-width: 375px) {
     .secaoProdutos {
-      max-width: 95%;
+      max-width: 375px;
     }
 
     .titulo {
