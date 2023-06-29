@@ -94,3 +94,13 @@
   font-weight: 500;
   letter-spacing: 0.457px;
 }
+
+@media (max-width: 375px) {
+  .info {
+    border: 1px solid #dee2e6;
+    border-top: none;
+    margin-top: -5px;
+    padding-inline: 16px;
+    padding-top: 16px;
+  }
+}
