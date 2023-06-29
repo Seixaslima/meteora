@@ -1,0 +1,106 @@
+.container {
+  padding: 16px 16px 32px;
+}
+
+.cabecalho {
+  padding-bottom: 24px;
+  border-bottom: 1px solid black;
+}
+
+.cabecalho h5 {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 24px;
+}
+
+.cabecalho p {
+  color: #212529;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.precoContainer {
+  margin-top: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.preco {
+  color: #212529;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.precoContainer p {
+  color: #adb5bd;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.coresContainer {
+  margin-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.caracteristicas {
+  color: #212529;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.tamanhoContainer {
+  margin-top: 16px;
+  padding-bottom: 16px;
+}
+
+.botaoSelecao {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.botoesSelecao {
+  display: flex;
+  gap: 16px;
+}
+
+.botaoSelecao input[type='radio'] {
+  appearance: none;
+  width: 13px;
+  height: 13px;
+  outline: 1px solid #dee2e6;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.botaoSelecao input[type='radio']:checked {
+  border: 4px solid #9353ff;
+}
+
+.botaoSubmit {
+  background-color: #9353ff;
+  padding: 9px 16px;
+  border: none;
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.457px;
+}
+
+@media (max-width: 375px) {
+  .info {
+    border: 1px solid #dee2e6;
+    border-top: none;
+    margin-top: -5px;
+    padding-inline: 16px;
+    padding-top: 16px;
+  }
+}

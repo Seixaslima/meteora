@@ -35,13 +35,15 @@
 }
 
 .botao {
-  width: 70px;
+  width: fit-content;
   height: 19px;
   padding: 9px 16px;
+  box-sizing: content-box;
   background: #9353ff;
 }
 
 .botao a {
+  display: block;
   text-decoration: none;
   color: #fff;
   text-align: center;
