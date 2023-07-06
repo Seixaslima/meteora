@@ -4,9 +4,11 @@ import styles from './CardProduto.module.css';
 import React, { useState } from 'react';
 import ModalPadrao from 'componentes/ModalPadrao/ModalPadrao';
 import ModalProduto from './ModalProduto/ModalProduto';
+import { useDispositivoContext } from 'Context/Dispositivo';
 
-export default function CardProduto({ produto, dispositivo }) {
+export default function CardProduto({ produto}) {
   const [show, setShow] = useState(false);
+  const {dispositivo} = useDispositivoContext();
 
   return (
     <>
@@ -31,7 +33,7 @@ export default function CardProduto({ produto, dispositivo }) {
         fecharModal={() => setShow(false)}
         tituloModal={'Confira detalhes sobre o produto'}
       >
-        <ModalProduto produto={produto} dispositivo={dispositivo} />
+        <ModalProduto produto={produto} />
       </ModalPadrao>
     </>
   );

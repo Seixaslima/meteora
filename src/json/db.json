@@ -1,0 +1,90 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Camisetas",
+      "img": "camiseta",
+      "alt": "Imagem de uma camisa"
+    },
+    {
+      "id": 2,
+      "titulo": "Bolsas",
+      "img": "Bolsas",
+      "alt": "Imagem de uma bolça"
+    },
+    {
+      "id": 3,
+      "titulo": "Calçados",
+      "img": "calçados",
+      "alt": "Imagem de um par de tênis"
+    },
+    {
+      "id": 4,
+      "titulo": "Calças",
+      "img": "calças",
+      "alt": "Imagem de uma pilha de calças dobradas"
+    },
+    {
+      "id": 5,
+      "titulo": "Casacos",
+      "img": "casacos",
+      "alt": "imagem de um casaco de trico"
+    },
+    {
+      "id": 6,
+      "titulo": "Óculos",
+      "img": "óculos",
+      "alt": "imagem de um oculos de sol"
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "produto": "Camiseta Conforto",
+      "descricao": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
+      "valor": 70,
+      "categoria": "Camisetas",
+      "img": "camiseta"
+    },
+    {
+      "id": 2,
+      "produto": "Calça Alfaiataria",
+      "descricao": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
+      "valor": 180,
+      "categoria": "Bolsas",
+      "img": "calça"
+    },
+    {
+      "id": 3,
+      "produto": "Tênis Chunky",
+      "descricao": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
+      "valor": 250,
+      "categoria": "Calçados",
+      "img": "tenis"
+    },
+    {
+      "id": 4,
+      "produto": "Jaqueta Jeans",
+      "descricao": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
+      "valor": 150,
+      "categoria": "Casacos",
+      "img": "jaqueta jeans"
+    },
+    {
+      "id": 5,
+      "produto": "Óculos Redondo",
+      "descricao": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
+      "valor": 120,
+      "categoria": "Óculos",
+      "img": "oculos"
+    },
+    {
+      "id": 6,
+      "produto": "Bolsa coringa",
+      "descricao": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
+      "valor": 120,
+      "categoria": "Bolsas",
+      "img": "bolsa"
+    }
+  ]
+}

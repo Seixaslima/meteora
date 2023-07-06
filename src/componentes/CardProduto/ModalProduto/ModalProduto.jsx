@@ -1,12 +1,14 @@
-import styles from './ModalProduto.module.css';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
+import styles from "./ModalProduto.module.css";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
 
-import React from 'react';
+import React from "react";
+import { useDispositivoContext } from "Context/Dispositivo";
 
-export default function ModalProduto({ produto, dispositivo }) {
+export default function ModalProduto({ produto }) {
+  const { dispositivo } = useDispositivoContext();
   return (
     <Container bsPrefix={`container ${styles.container}`}>
       <Row>
@@ -37,7 +39,7 @@ export default function ModalProduto({ produto, dispositivo }) {
                       name="cor"
                       id="AzulClaro"
                       value="Azul claro"
-                      style={{ backgroundColor: '#75D7F0' }}
+                      style={{ backgroundColor: "#75D7F0" }}
                     />
                     <label htmlFor="AzulClaro">Azul claro</label>
                   </div>
@@ -47,7 +49,7 @@ export default function ModalProduto({ produto, dispositivo }) {
                       name="cor"
                       id="Preto"
                       value="Preto"
-                      style={{ backgroundColor: 'black' }}
+                      style={{ backgroundColor: "black" }}
                     />
                     <label htmlFor="Preto">Preto</label>
                   </div>
@@ -57,7 +59,7 @@ export default function ModalProduto({ produto, dispositivo }) {
                       name="cor"
                       id="Offwhite"
                       value="Offwhite"
-                      style={{ backgroundColor: '#F3F6F7' }}
+                      style={{ backgroundColor: "#F3F6F7" }}
                     />
                     <label htmlFor="AzulClaro">Offwhite</label>
                   </div>

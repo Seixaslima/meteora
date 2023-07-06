@@ -1,7 +1,9 @@
-import styles from './Card.module.css';
-import React from 'react';
+import { useDispositivoContext } from "Context/Dispositivo";
+import styles from "./Card.module.css";
+import React from "react";
 
-export default function Card({ imagem, dispositivo }) {
+export default function Card({ imagem }) {
+  const { dispositivo } = useDispositivoContext();
   return (
     <div className={styles.card}>
       <img
