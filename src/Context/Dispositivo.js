@@ -6,7 +6,7 @@ const dispositivoContext = createContext();
 dispositivoContext.displayName = "Dispositivo";
 
 export function DispositivoProvider({ children }) {
-  const [dispositivo, setDispositivo] = useState("");
+  const [dispositivo, setDispositivo] = useState("Desktop");
 
   return (
     <dispositivoContext.Provider value={{ dispositivo, setDispositivo }}>
@@ -19,24 +19,21 @@ export function useDispositivoContext() {
   const { dispositivo, setDispositivo } = useContext(dispositivoContext);
 
   useEffect(() => {
+    setDispositivo(tipoDispositivo());
+  }, [setDispositivo]);
+
+  function tipoDispositivo() {
     const largura = window.innerWidth;
-    if (largura < 376) return setDispositivo("Mobile");
-    if (largura < 769) return setDispositivo("Tablet");
-    return setDispositivo("Desktop");
-  }, [window.innerWidth, setDispositivo]);
+    let resultado = "Desktop";
+    largura < 376
+      ? (resultado = "Mobile")
+      : largura < 769
+      ? (resultado = "Tablet")
+      : (resultado = "Desktop");
 
-  // function tipoDispositivo() {
-  //   const largura = window.innerWidth;
-  //   let resultado = "Desktop";
-  //   largura < 376
-  //     ? (resultado = "Mobile")
-  //     : largura < 769
-  //     ? (resultado = "Tablet")
-  //     : (resultado = "Desktop");
-
-  //   return resultado;
-  // }
-  // window.addEventListener("resize", () => setDispositivo(tipoDispositivo()));
+    return resultado;
+  }
+  window.addEventListener("resize", () => setDispositivo(tipoDispositivo()));
 
   return {
     dispositivo
