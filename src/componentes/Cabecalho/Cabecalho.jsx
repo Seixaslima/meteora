@@ -1,15 +1,18 @@
-import styles from './Cabecalho.module.css';
-import logo from './Logo desktop.png';
+import styles from "./Cabecalho.module.css";
+import logo from "./Logo desktop.png";
 
-import React from 'react';
-import MenuSanduiche from 'componentes/MenuSanduiche/MenuSanduiche';
-import ListaMenu from 'componentes/ListaMenu/ListaMenu';
+import React from "react";
+import MenuSanduiche from "componentes/MenuSanduiche/MenuSanduiche";
+import ListaMenu from "componentes/ListaMenu/ListaMenu";
+import { Link } from "react-router-dom";
 
 export default function Cabecalho() {
   return (
     <nav className={styles.cabecalho}>
       <div className={styles.menu}>
-        <img className={styles.logo} src={logo} alt="Logo da loja" />
+        <Link to="/">
+          <img className={styles.logo} src={logo} alt="Logo da loja" />
+        </Link>
         <ul className={styles.links}>
           <ListaMenu />
         </ul>

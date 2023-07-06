@@ -14,7 +14,7 @@ export default function ModalProduto({ produto }) {
       <Row>
         <Col sm={6} xs={12}>
           <Image
-            src={`./assets/${dispositivo}/Produtos/${produto.img}.png`}
+            src={`/assets/${dispositivo}/Produtos/${produto.img}.png`}
             alt=""
             fluid
           />
