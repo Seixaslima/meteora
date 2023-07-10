@@ -20,7 +20,7 @@ export default function PaginaCategoria() {
       />
       <SecaoProdutos
         titulo="Veja esses produtos"
-        filtro={parametros.categoria}
+        itemFiltrado={parametros.categoria}
         tipoFiltro="categoria"
       />
     </>

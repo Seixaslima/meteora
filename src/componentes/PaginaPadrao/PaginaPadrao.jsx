@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import Cabecalho from "componentes/Cabecalho/Cabecalho";
 import Rodape from "componentes/Rodape/Rodape";
 import { DispositivoProvider } from "Context/Dispositivo";
+import { ProdutosProvider } from "Context/Produtos";
 
 export default function PaginaPadrao({ children }) {
   return (
@@ -11,8 +12,10 @@ export default function PaginaPadrao({ children }) {
       <Cabecalho />
       <main>
         <DispositivoProvider>
-          <Outlet />
-          {children}
+          <ProdutosProvider>
+            <Outlet />
+            {children}
+          </ProdutosProvider>
         </DispositivoProvider>
       </main>
       <Rodape />
