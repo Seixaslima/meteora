@@ -1,11 +1,13 @@
-import styles from './Banner.module.css';
-import { BiSolidRightArrow, BiSolidLeftArrow } from 'react-icons/bi';
+import styles from "./Banner.module.css";
+import { BiSolidRightArrow, BiSolidLeftArrow } from "react-icons/bi";
 
-import React, { useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
+import React, { useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
+import { useDispositivoContext } from "Context/Dispositivo";
 
-export default function Banner({ dispositivo }) {
+export default function Banner() {
   const [index, setIndex] = useState(0);
+  const { dispositivo } = useDispositivoContext();
 
   function handleSelect(selectedIndex) {
     setIndex(selectedIndex);
