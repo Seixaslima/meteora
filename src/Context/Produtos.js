@@ -21,9 +21,15 @@ export function useProdutosContext() {
     "https://my-json-server.typicode.com/Seixaslima/meteora-db/produtos";
 
   useEffect(() => {
-    fetch(url)
-      .then(resposta => resposta.json())
-      .then(dados => setProdutos(dados));
+    if (url !== "") {
+      fetch(url)
+        .then(resposta => {
+          return resposta.json();
+        })
+        .then(dados => {
+          setProdutos(dados);
+        });
+    }
   }, [url, setProdutos]);
 
   function filtro(tipo, conteudo) {
@@ -37,6 +43,12 @@ export function useProdutosContext() {
   }
 
   function filtrarProduto(conteudo) {
+    // futura implementaçao de busca
+    // const termos = conteudo.split(/[ ,]+/);
+    // const urlBusca = termos.reduce(
+    //   (acumulador, termoAtual) => `${acumulador},q=${termoAtual}`,
+    //   conteudo
+    // );
     return setUrl(`${api}?q=${conteudo}`);
   }
 
